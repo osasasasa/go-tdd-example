@@ -3,8 +3,8 @@ package main // テストファイルは、テストしたい関数と同じパ�
 import "testing"
 
 func TestHello(t *testing.T) {
-	got := Hello()         // テストしたい関数（Hello）を呼び出して、その結果を「got」という変数に入れる
-	want := "Hello, world" // 期待する結果を「want」という変数に入れる
+	got := Hello("Chris")  // テストしたい関数（Hello）を呼び出して、その結果を「got」という変数に入れる
+	want := "Hello, Chris" // 期待する結果を「want」という変数に入れる
 
 	if got != want { //「got」と「want」を比較して、同じかどうかをチェック
 		t.Errorf("got %q want %q", got, want) // もし違っていたら、エラーメッセージを表示
